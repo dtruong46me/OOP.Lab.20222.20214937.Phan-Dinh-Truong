@@ -1,0 +1,13 @@
+# Problem Tasks
+- [x] 2.2.1 HelloWorld.java
+- [x] 2.2.2 FirstDialog.java
+- [x] 2.2.3 HelloNameDialog.java
+- [x] 2.2.4 ShowTwoNumbers.java
+- [x] 2.2.5 CalculateTwoNums.java
+- [ ] 2.2.6 SolvingEquation.java
+- [x] 6.1 ChoosingOption.java
+- [x] 6.2 InputFromKeyboard.java
+- [x] 6.3 DisplayTriangle.java
+- [x] 6.4 DaysInMonth.java
+- [x] 6.5 SortArray.java
+- [x] 6.6 MatrixAddition.java
