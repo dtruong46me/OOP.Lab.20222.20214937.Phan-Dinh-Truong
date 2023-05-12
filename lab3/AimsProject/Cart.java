@@ -1,4 +1,4 @@
-package lab2.AimsProject;
+package lab3.AimsProject;
 
 public class Cart {
     private static final int MAX_NUMBERS_ORDERED = 20;
@@ -45,5 +45,20 @@ public class Cart {
             total += itemsOrdered[i].getCost();
         }
         return total;
+    }
+
+    public void getDetail() {
+        
+        System.out.println("***********************CART***********************");
+        System.out.println("Ordered Items: ");
+
+        for (int i = 0; i < qtyOrdered; i++) {
+            DigitalVideoDisc dvd = itemsOrdered[i];
+            System.out.printf("%d. DVD - %s - %s - %s - %d: %.2f $\n", 
+                i+1, dvd.getTitle(), dvd.getDirector(), dvd.getLength(), dvd.getCost());
+        }
+
+        System.out.printf("Total cost: %.2f\n", getTotalCost());
+        System.out.println("***************************************************");
     }
 }
