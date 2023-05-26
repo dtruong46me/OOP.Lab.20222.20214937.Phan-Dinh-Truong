@@ -1,6 +1,6 @@
-package AimsProject.src.hust.soict.dsai.aims.disc;
+package AimsProject.src.hust.soict.dsai.aims.media;
 
-public class DigitalVideoDisc {
+public class DigitalVideoDisc extends Media{
     private static int nbDigitalVideoDiscs = 100001;
     private int id;
     private String title;
@@ -11,34 +11,28 @@ public class DigitalVideoDisc {
 
 
     public DigitalVideoDisc(String title) {
-        this.title = title;
+        super(title);
         nbDigitalVideoDiscs ++;
         this.id = nbDigitalVideoDiscs;
     }
 
     public DigitalVideoDisc(String title, String category,  float cost) {
-        this.category = category;
-        this.title = title;
-        this.cost = cost;
+        super(title, category, cost);
         nbDigitalVideoDiscs ++;
         this.id = nbDigitalVideoDiscs;
     }
 
     public DigitalVideoDisc(String title, String category, String director,  float cost) {
+        super(director, category, cost);
         this.director = director;
-        this.category = category;
-        this.title = title;
-        this.cost = cost;
         nbDigitalVideoDiscs ++;
         this.id = nbDigitalVideoDiscs;
     }
 
     public DigitalVideoDisc(String title, String category, String director, int length, float cost) {
-        this.title = title;
-        this.category = category;
+        super(title, category, cost);
         this.director = director;
         this.length = length;
-        this.cost = cost;
         nbDigitalVideoDiscs ++;
         this.id = nbDigitalVideoDiscs;
     }

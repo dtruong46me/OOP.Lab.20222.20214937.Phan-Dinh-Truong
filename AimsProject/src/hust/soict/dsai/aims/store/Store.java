@@ -1,6 +1,6 @@
 package AimsProject.src.hust.soict.dsai.aims.store;
 
-import AimsProject.src.hust.soict.dsai.aims.disc.DigitalVideoDisc;
+import AimsProject.src.hust.soict.dsai.aims.media.DigitalVideoDisc;
 
 public class Store {
     
