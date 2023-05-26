@@ -1,6 +1,6 @@
 package AimsProject.src.hust.soict.dsai.aims.cart;
 
-import AimsProject.src.hust.soict.dsai.aims.disc.DigitalVideoDisc;
+import AimsProject.src.hust.soict.dsai.aims.media.DigitalVideoDisc;
 
 public class Cart {
     private static final int MAX_NUMBERS_ORDERED = 20;
