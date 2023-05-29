@@ -1,40 +1,21 @@
 package AimsProject.src.hust.soict.dsai.aims.media;
 
-public class DigitalVideoDisc extends Media{
-    private static int nbDigitalVideoDiscs = 100001;
-    private int id;
-    private String title;
-    private String category;
-    private String director;
-    private int length;
-    private float cost;
-
+public class DigitalVideoDisc extends Disc{
 
     public DigitalVideoDisc(String title) {
         super(title);
-        nbDigitalVideoDiscs ++;
-        this.id = nbDigitalVideoDiscs;
     }
 
     public DigitalVideoDisc(String title, String category,  float cost) {
         super(title, category, cost);
-        nbDigitalVideoDiscs ++;
-        this.id = nbDigitalVideoDiscs;
     }
 
     public DigitalVideoDisc(String title, String category, String director,  float cost) {
-        super(director, category, cost);
-        this.director = director;
-        nbDigitalVideoDiscs ++;
-        this.id = nbDigitalVideoDiscs;
+        super(title, category, cost, director);
     }
 
     public DigitalVideoDisc(String title, String category, String director, int length, float cost) {
-        super(title, category, cost);
-        this.director = director;
-        this.length = length;
-        nbDigitalVideoDiscs ++;
-        this.id = nbDigitalVideoDiscs;
+        super(title, category, cost, length, director);
     }
 
     public String getDetail() {
@@ -61,59 +42,5 @@ public class DigitalVideoDisc extends Media{
             }
         }
         return true;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public String getCategory() {
-        return category;
-    }
-
-    public void setCategory(String category) {
-        this.category = category;
-    }
-
-    public String getDirector() {
-        return director;
-    }
-
-    public void setDirector(String director) {
-        this.director = director;
-    }
-
-    public int getLength() {
-        return length;
-    }
-
-    public void setLength(int length) {
-        this.length = length;
-    }
-
-    public float getCost() {
-        return cost;
-    }
-
-    public void setCost(float cost) {
-        this.cost = cost;
-    }
-
-    public int getID() {
-        return id;
-    }
-
-    @Override
-    public String toString() {
-        return "DigitalVideoDisc{title = \'" + title + "\', "
-            + "category = \'" + category + "\', "
-            + "director = \'" + director + "\', "
-            + "length = " + length + ", "
-            + "cost = " + cost +", "
-            + "id = "+ id +"}";
     }
 }

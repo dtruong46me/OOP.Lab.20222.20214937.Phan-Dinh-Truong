@@ -22,7 +22,7 @@ public class Store {
             System.out.println("Cannot add DVD, the Store is full!");
         }
         itemsInStore[currentIndex++] = dvd;
-        System.out.println("The DVD{id = '" + dvd.getID() +"'} has been ADDED to the Store!");
+        System.out.println("The DVD{id = '" + dvd.getId() +"'} has been ADDED to the Store!");
     }
 
     public void removedDVD(DigitalVideoDisc dvd) {
@@ -34,7 +34,7 @@ public class Store {
                     itemsInStore[j] = itemsInStore[j+1];
                 }
                 currentIndex -= 1;
-                System.out.println("The DVD{id = '" + dvd.getID() + "'} has been REMOVED from Store!");
+                System.out.println("The DVD{id = '" + dvd.getId() + "'} has been REMOVED from Store!");
             }
         }
         if (!found) {
@@ -45,7 +45,7 @@ public class Store {
     public void showItems() {
         System.out.println("************************STORE************************");
         for (int i = 0; i < currentIndex; i++) {
-            System.out.printf("%d. ID: %d, %s\n",i+1,itemsInStore[i].getID(), itemsInStore[i].getDetail());
+            System.out.printf("%d. ID: %d, %s\n",i+1,itemsInStore[i].getId(), itemsInStore[i].getDetail());
         }
         System.out.println("*****************************************************");
     }
