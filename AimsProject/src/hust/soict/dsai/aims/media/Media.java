@@ -29,7 +29,7 @@ public abstract class Media {
         return "DVD - " + getId()
                 + " - " + getTitle() 
                 + " - " + getCategory() 
-                + " - :" + getCost() + " $";
+                + " - :" + getCost() + "$";
     }
 
     public int getId() {

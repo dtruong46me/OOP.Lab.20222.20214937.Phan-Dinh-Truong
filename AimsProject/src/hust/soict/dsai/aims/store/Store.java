@@ -25,7 +25,8 @@ public class Store {
         System.out.println("************************STORE************************");
         int i = 0;
         for (Media media : itemsInStore) {
-            System.out.printf("%d. ID: %d, %s\n",i+1,media.getId(), media.getDetail());
+            System.out.printf("%d. %s\n",i+1, media.getDetail());
+            i += 1;
         }
         System.out.println("*****************************************************");
     }

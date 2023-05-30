@@ -23,13 +23,13 @@ public class DigitalVideoDisc extends Disc implements Playable{
         System.out.println("DVD length: " + getLength() + " minutes");
     }
 
-    public String getDetail() {
-        return "DVD - " + getTitle() 
-                + " - " + getCategory() 
-                + " - " + getDirector() 
-                + " - " + getLength() 
-                + " - :" + getCost() + " $";
-    }
+    // public String getDetail() {
+    //     return "DVD - " + getTitle() 
+    //             + " - " + getCategory() 
+    //             + " - " + getDirector() 
+    //             + " - " + getLength() 
+    //             + " - :" + getCost() + "$";
+    // }
 
     public boolean search(String title) {
         String[] words = title.toLowerCase().split("\\s+");

@@ -64,9 +64,10 @@ public class Cart {
         int i = 0;
         for (Media media : itemsOrdered) {
             System.out.printf("%d. %s\n",i+1, media.getDetail());     
+            i += 1;
         }
 
-        System.out.printf("Total cost: %.2f\n", getTotalCost());
+        System.out.printf("Total cost: %.2f$\n", getTotalCost());
         System.out.println("***************************************************");
     }
 }
