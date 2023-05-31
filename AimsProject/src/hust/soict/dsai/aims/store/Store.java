@@ -10,14 +10,14 @@ public class Store {
 
     public void addMedia(Media media) {
         itemsInStore.add(media);
-        System.out.println("The media '" + media.getTitle() + "' has been ADDED to the Store!");
+        System.out.println("\u001B[32mThe media '" + media.getTitle() + "' has been ADDED to the Store!\u001B[37m");
     }
 
     public void removeMedia(Media media) {
         if (itemsInStore.remove(media)) {
-            System.out.println("The media '" + media.getTitle() + "' has been REMOVED from the Store!");
+            System.out.println("\u001B[32mThe media '" + media.getTitle() + "' has been REMOVED from the Store!\u001B[37m");
         } else {
-            System.out.println("The media '" + media.getTitle() + "' is not in the store");
+            System.out.println("\u001B[32mThe media '" + media.getTitle() + "' is NOT EXIST in the Store!\u001B[37m");
         }
     }
 
@@ -25,7 +25,8 @@ public class Store {
         System.out.println("************************STORE************************");
         int i = 0;
         for (Media media : itemsInStore) {
-            System.out.printf("%d. ID: %d, %s\n",i+1,media.getId(), media.getDetail());
+            System.out.printf("%d. %s\n",i+1, media.getDetail());
+            i += 1;
         }
         System.out.println("*****************************************************");
     }

@@ -1,7 +1,7 @@
 package AimsProject.src.hust.soict.dsai.aims.media;
 
 public abstract class Media {
-    protected static int nbMedias = 100001;
+    protected static int nbMedias = 100000;
     protected int id;
     protected String title;
     protected String category;
@@ -29,7 +29,7 @@ public abstract class Media {
         return "DVD - " + getId()
                 + " - " + getTitle() 
                 + " - " + getCategory() 
-                + " - :" + getCost() + " $";
+                + " - :" + getCost() + "$";
     }
 
     public int getId() {
@@ -58,10 +58,14 @@ public abstract class Media {
     }
 
     @Override
-    public String toString() {
-        return "Media [id=" + id + 
-            ", title=" + title + 
-            ", category=" + category + 
-            ", cost=" + cost + "]";
+    public boolean equals(Object o) {
+        if (o == this) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
+        Media other = (Media) o; 
+        return getTitle().equals(other.getTitle());
     }
 }
