@@ -4,13 +4,13 @@ import java.util.ArrayList;
 
 public class CompactDisc extends Disc implements Playable{
     private String artist;
-    private ArrayList<Track> tracks;
+    private ArrayList<Track> tracks = new ArrayList<>();
 
     public CompactDisc() {
         super();
     }
 
-    public CompactDisc(String title, String category, int length, String director, float cost) {
+    public CompactDisc(String title, String category, float cost, int length, String director) {
         super(title, category, cost, length, director);
     }
 
@@ -22,17 +22,19 @@ public class CompactDisc extends Disc implements Playable{
 
     public void addTrack(Track track) {
         if (tracks.contains(track)) {
-            System.out.println("The track is already in the list of tracks");
+            System.out.println("\u001B[31mThe track is already in the list of tracks!\u001B[37m");
         } else {
             tracks.add(track);
+            System.out.println("\u001B[32mThe track '" + track.getTitle() + "' has been ADDED to the list of tracks!\u001B[37m");
         }
     }
 
     public void removeTrack(Track track) {
         if (tracks.contains(track)) {
             tracks.remove(track);
+            System.out.println("\u001B[32mThe track '" + track.getTitle() + "' has been REMOVED from the list of tracks!\u001B[37m");
         } else {
-            System.out.println("The track does not exist in the list of tracks");
+            System.out.println("\u001B[31mThe track is NOT EXIST in the list of tracks!\u001B[37m");
         }
     }
 
@@ -54,6 +56,13 @@ public class CompactDisc extends Disc implements Playable{
         for (Track track : tracks) {
             track.play();
         }
+    }
+
+    @Override
+    public String toString() {
+        return "CompactDisc [id=" + id + ", title=" + title + ", category=" 
+            + category + ", cost=" + cost + ", director= " + director + ", length=" 
+            + length + "artist=" + artist + ", tracks=" + tracks.toString() + "']";
     }
 
     public String getArtist() {

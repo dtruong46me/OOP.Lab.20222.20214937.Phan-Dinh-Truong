@@ -1,8 +1,8 @@
 package AimsProject.src.hust.soict.dsai.aims.media;
 
 public abstract class Disc extends Media{
-    private int length;
-    private String director;
+    protected int length;
+    protected String director;
 
     public Disc() {
         super();
@@ -25,6 +25,11 @@ public abstract class Disc extends Media{
         super(title, category, cost);
         this.length = length;
         this.director = director;
+    }
+
+    @Override
+    public String toString() {
+        return "Disc [length=" + length + ", director=" + director + "]";
     }
 
     public int getLength() {

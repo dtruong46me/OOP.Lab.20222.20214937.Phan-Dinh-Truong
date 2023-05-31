@@ -1,23 +1,24 @@
 package AimsProject.src.hust.soict.dsai.aims.cart;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import AimsProject.src.hust.soict.dsai.aims.media.Media;
 
 public class Cart {
 
-    private ArrayList<Media> itemsOrdered = new ArrayList<>();
+    private List<Media> itemsOrdered = new ArrayList<>();
 
     public void addMedia(Media media) {
         itemsOrdered.add(media);
-        System.out.println("The media '" + media.getTitle() + "' has been add successfully");
+        System.out.println("\u001B[32mThe media '" + media.getTitle() + "' has been ADDED successfully!\u001B[0m");
     }
 
     public void removeMedia(Media media) {
         if (itemsOrdered.remove(media)) {
-            System.out.println("The media '" + media.getTitle() + "' has been remove successfully");
+            System.out.println("\u001B[32mThe media '" + media.getTitle() + "' has been REMOVED successfully!\u001B[0m");
         } else {
-            System.out.println("The media '" + media.getTitle() + "' is not exist in the cart");
+            System.out.println("\u001B[31mThe media '" + media.getTitle() + "' is NOT EXIST in the cart!\u001B[0m");
         }
     }
 
@@ -27,6 +28,10 @@ public class Cart {
             total += media.getCost();
         }
         return total;
+    }
+
+    public List<Media> getItemOrdered() {
+        return itemsOrdered;
     }
 
     // public void searchByTitle(String title) {

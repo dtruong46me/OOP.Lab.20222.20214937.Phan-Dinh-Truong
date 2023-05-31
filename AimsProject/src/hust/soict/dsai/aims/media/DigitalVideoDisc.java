@@ -10,11 +10,11 @@ public class DigitalVideoDisc extends Disc implements Playable{
         super(title, category, cost);
     }
 
-    public DigitalVideoDisc(String title, String category, String director,  float cost) {
+    public DigitalVideoDisc(String title, String category, float cost, String director) {
         super(title, category, cost, director);
     }
 
-    public DigitalVideoDisc(String title, String category, String director, int length, float cost) {
+    public DigitalVideoDisc(String title, String category, float cost, String director, int length) {
         super(title, category, cost, length, director);
     }
 
@@ -22,14 +22,6 @@ public class DigitalVideoDisc extends Disc implements Playable{
         System.out.println("Playing DVD: " + getTitle());
         System.out.println("DVD length: " + getLength() + " minutes");
     }
-
-    // public String getDetail() {
-    //     return "DVD - " + getTitle() 
-    //             + " - " + getCategory() 
-    //             + " - " + getDirector() 
-    //             + " - " + getLength() 
-    //             + " - :" + getCost() + "$";
-    // }
 
     public boolean search(String title) {
         String[] words = title.toLowerCase().split("\\s+");
@@ -47,5 +39,11 @@ public class DigitalVideoDisc extends Disc implements Playable{
             }
         }
         return true;
+    }
+
+    @Override
+    public String toString() {
+        return "DigitalVideoDisc [id='" + id + "', title='" + title + "', category='" 
+            + category + "', cost='" + cost + "', director='" + director + "', length='" + length + "']";
     }
 }

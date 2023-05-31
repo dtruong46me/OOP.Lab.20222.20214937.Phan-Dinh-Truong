@@ -58,14 +58,6 @@ public abstract class Media {
     }
 
     @Override
-    public String toString() {
-        return "Media [id=" + id + 
-            ", title=" + title + 
-            ", category=" + category + 
-            ", cost=" + cost + "]";
-    }
-
-    @Override
     public boolean equals(Object o) {
         if (o == this) {
             return true;

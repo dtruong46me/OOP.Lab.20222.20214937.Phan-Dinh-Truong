@@ -29,6 +29,11 @@ public class Track implements Playable{
         return getTitle().equals(other.getTitle()) && getLength() == other.getLength();
     }
 
+    @Override
+    public String toString() {
+        return "Track [title=" + title + ", length=" + length + "]";
+    }
+
     public String getTitle() {
         return title;
     }

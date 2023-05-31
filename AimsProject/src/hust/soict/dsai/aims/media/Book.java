@@ -4,12 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Book extends Media{
-    private int id;
-    private String title;
-    private String category;
-    private float cost;
-    private List<String> authors = new ArrayList<String>();
-    
+    private ArrayList<String> authors;
+
     public Book() {
         super();
     }
@@ -32,21 +28,27 @@ public class Book extends Media{
         return false;
     }
 
+    @Override
+    public String toString() {
+        return "Book [id=" + id + ", title=" + title + ", category=" + category 
+        + ", cost=" + cost + ", authors=" + authors + "]";
+    }
+
     public void addAuthor(String authorName) {
         if (!findAuthor(authorName)) {
             authors.add(authorName);
-            System.out.println("Author named '"+ authorName + "' is added successfully");
+            System.out.println("\u001B[32mThe author '"+ authorName + "' has been ADDED to the list of authors!\u001B[37m");
         } else {
-            System.out.println("Author named '"+ authorName +"'is already in author list");
+            System.out.println("\u001B[31mThe author '"+ authorName +"'is already in the list of authors!\u001B[37m");
         }
     }
 
     public void removeAuthor(String authorName) {
         if (authors.contains(authorName)) {
             authors.remove(authorName);
-            System.out.println("Author named'" + authorName + "' is removed successfully");
+            System.out.println("\u001B[32mThe author '" + authorName + "' is removed successfully!\u001B[37m");
         } else {
-            System.out.println("Cannot find author named '" + authorName + "'");
+            System.out.println("\u001B[31mCannot find the author '" + authorName + "'!\u001B[37m");
         }
     }
 
@@ -86,7 +88,7 @@ public class Book extends Media{
         return authors;
     }
 
-    public void setAuthors(List<String> authors) {
+    public void setAuthors(ArrayList<String> authors) {
         this.authors = authors;
     }
 

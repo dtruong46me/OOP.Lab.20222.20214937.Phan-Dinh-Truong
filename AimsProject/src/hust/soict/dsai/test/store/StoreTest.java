@@ -8,17 +8,17 @@ public class StoreTest {
     public static void main(String[] args) {
         Store store = new Store();
 
-        // Add DVDs to the store
+        // Add Media to the store
         Media media1 = new DigitalVideoDisc("The Lion King", 
-            "Animation", "Roger Allers", 87, 19.95f);
+            "Animation", 19.95f, "Roger Allers", 87);
         Media media2 = new DigitalVideoDisc("Star Wars: A New Hope", 
-            "Science Fiction", "George Lucas", 124, 24.95f);
+            "Science Fiction", 24.95f, "George Lucas", 124);
         Media media3 = new DigitalVideoDisc("Harry Potter and the Philosopher's Stone", 
-            "Fantasy", "Chris Columbus", 152, 27.98f);
+            "Fantasy", 27.98f, "Chris Columbus", 152);
         Media media4 = new DigitalVideoDisc("Aladin", 
             "Animation", 18.99f);
         Media media5 = new DigitalVideoDisc("Avatar 2", 
-            "Sci-fi/Action", "Jame Cameron", 190, 26.4f);
+            "Sci-fi/Action", 26.4f, "Jame Cameron", 190);
 
         store.addMedia(media1);
         store.addMedia(media2);
