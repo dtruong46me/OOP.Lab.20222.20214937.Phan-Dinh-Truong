@@ -62,7 +62,7 @@ public class CompactDisc extends Disc implements Playable{
     public String toString() {
         return "CompactDisc [id=" + id + ", title=" + title + ", category=" 
             + category + ", cost=" + cost + ", director= " + director + ", length=" 
-            + length + "artist=" + artist + ", tracks=" + tracks.toString() + "']";
+            + length + ", artist=" + artist + ", tracks=" + tracks.toString() + "]";
     }
 
     public String getArtist() {
