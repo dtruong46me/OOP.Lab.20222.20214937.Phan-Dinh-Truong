@@ -87,11 +87,4 @@ public class Book extends Media{
     public void setAuthors(ArrayList<String> authors) {
         this.authors = authors;
     }
-
-    @Override
-    public int compareTo(Media o) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'compareTo'");
-    }
-
 }

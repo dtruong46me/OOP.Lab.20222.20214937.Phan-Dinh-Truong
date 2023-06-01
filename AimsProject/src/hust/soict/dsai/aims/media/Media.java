@@ -27,10 +27,10 @@ public abstract class Media implements Comparable<Media>{
     }
 
     public String getDetail() {
-        return "DVD - " + getId()
+        return "Media - " + getId()
                 + " - " + getTitle() 
                 + " - " + getCategory() 
-                + " - :" + getCost() + "$";
+                + " - " + getCost() + "$";
     }
 
     @Override 

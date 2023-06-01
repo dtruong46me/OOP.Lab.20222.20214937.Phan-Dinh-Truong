@@ -19,8 +19,9 @@ public class DigitalVideoDisc extends Disc implements Playable{
     }
 
     public void play() {
-        System.out.println("Playing DVD: " + getTitle());
-        System.out.println("DVD length: " + getLength() + " minutes");
+        System.out.println("\n\u001B[33mPLAY THE MEDIA\u001B[37m");
+        System.out.println(" - Playing DVD : " + getTitle());
+        System.out.println(" - DVD length  : " + getLength() + " minutes");
     }
 
     public boolean search(String title) {
@@ -45,11 +46,5 @@ public class DigitalVideoDisc extends Disc implements Playable{
     public String toString() {
         return "DigitalVideoDisc [id=" + id + ", title=" + title + ", category=" 
             + category + ", cost=" + cost + ", director=" + director + ", length=" + length + "]";
-    }
-
-    @Override
-    public int compareTo(Media o) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'compareTo'");
     }
 }
