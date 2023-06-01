@@ -27,11 +27,6 @@ public abstract class Disc extends Media{
         this.director = director;
     }
 
-    @Override
-    public String toString() {
-        return "Disc [length=" + length + ", director=" + director + "]";
-    }
-
     public int getLength() {
         return length;
     }

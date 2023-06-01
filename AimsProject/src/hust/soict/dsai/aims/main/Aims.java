@@ -90,7 +90,7 @@ public class Aims {
         Media media = store.search(title);
 
         if (media != null) {
-            System.out.println(media.getDetail());
+            System.out.println(media.toString());
             System.out.print("Do you want to add this media '" + media.getTitle() + "' to the cart? (Y/N): ");
             String choice = sc.nextLine();
 
@@ -98,7 +98,7 @@ public class Aims {
                 cart.addMedia(media);
             } 
         } else {
-            System.out.println("\n\u001B[31mCANNOT FOUND THE MEDIA '" + title + "' IN THE STORE!\u001B[37m");
+            System.out.println("\u001B[31mCANNOT FOUND THE MEDIA '" + title + "' IN THE STORE!\u001B[37m");
         }
     }
 
@@ -111,7 +111,7 @@ public class Aims {
         if (media != null) {
             cart.addMedia(media);
         } else {
-            System.out.println("\n\u001B[31mCANNOT FOUND MEDIA '" + title + "' IN THE STORE!\u001B[37m");
+            System.out.println("\u001B[31mCANNOT FOUND MEDIA '" + title + "' IN THE STORE!\u001B[37m");
         }
     }
 
@@ -124,7 +124,7 @@ public class Aims {
         if (media != null && (media instanceof DigitalVideoDisc || media instanceof CompactDisc)) {
             ((Playable) media).play();
         } else {
-            System.out.println("\n\u001B[31mMEDIA NOT FOUND OR CANNOT BE PLAYED!\u001B[37m");
+            System.out.println("\u001B[31mMEDIA NOT FOUND OR CANNOT BE PLAYED!\u001B[37m");
         }
     }
 

@@ -25,16 +25,23 @@ public class Book extends Media{
 
     @Override
     public String toString() {
-        return "Book [id=" + id + ", title=" + title + ", category=" + category 
-        + ", cost=" + cost + ", authors=" + authors + "]";
+        // return "Book [id=" + id + ", title=" + title + ", category=" + category 
+        // + ", cost=" + cost + ", authors=" + authors + "]";
+        return "\n\u001B[33m---------- BOOK DETAIL----------\n\u001B[37m" + 
+               " - ID      : " + id + "\n" + 
+               " - Title   : " + title + "\n" + 
+               " - Category: " + category + "\n" + 
+               " - Cost    : " + cost + "\n" + 
+               " - Authors : " + authors + "\n" + 
+               "--------------------------------\n";
     }
 
     public void addAuthor(String authorName) {
         if (authors.contains(authorName)) {
-            System.out.println("\u001B[31mThe author '"+ authorName +"'is already in the list of authors!\u001B[37m");
+            System.out.println("\u001B[31mTHE AUTHOR '"+ authorName +"' IS ALREADY IN THE LIST OF AUTHORS!\u001B[37m");
         } else {
             authors.add(authorName);
-            System.out.println("\u001B[33mThe author '"+ authorName + "' has been ADDED to the list of authors!\u001B[37m");
+            System.out.println("\u001B[32mTHE AUTHOR '"+ authorName + "' HAS BEEN ADDED TO THE LIST OF AUTHORS!\u001B[37m");
         
         }
     }
@@ -42,9 +49,9 @@ public class Book extends Media{
     public void removeAuthor(String authorName) {
         if (authors.contains(authorName)) {
             authors.remove(authorName);
-            System.out.println("\u001B[33mThe author '" + authorName + "' has been REMOVED from the list of authors!\u001B[37m");
+            System.out.println("\u001B[32mTHE AUTHOR '" + authorName + "' HAS BEEN REMOVED FROM THE LIST OF AUTHORS!\u001B[37m");
         } else {
-            System.out.println("\u001B[31mCannot find the author '" + authorName + "'!\u001B[37m");
+            System.out.println("\u001B[31mCANNOT FIND THE AUTHOR '" + authorName + "'!\u001B[37m");
         }
     }
 

@@ -31,9 +31,9 @@ public class Cart {
         }
 
         if (filteredList.isEmpty()) {
-            System.out.println("\n\u001B[31mNO MEDIA FOUND WITH THE ID '" + mediaID + "'\u001B[37m");
+            System.out.println("\u001B[31mNO MEDIA FOUND WITH THE ID '" + mediaID + "'\u001B[37m");
         } else {
-            System.out.println("\n\u001B[31mFILTERED MEDIA LIST WITH THE ID '" + mediaID + "'\u001B[31m");
+            System.out.println("\u001B[31mFILTERED MEDIA LIST WITH THE ID '" + mediaID + "'\u001B[31m");
         }
     }
 
@@ -47,9 +47,9 @@ public class Cart {
         }
 
         if (filteredList.isEmpty()) {
-            System.out.println("\n\u001B[31mNO MEDIA FOUND WITH THE ID '" + mediaTitle + "'\u001B[37m");
+            System.out.println("\u001B[31mNO MEDIA FOUND WITH THE ID '" + mediaTitle + "'\u001B[37m");
         } else {
-            System.out.println("\n\u001B[31mFILTERED MEDIA LIST WITH THE ID '" + mediaTitle + "'\u001B[31m");
+            System.out.println("\u001B[31mFILTERED MEDIA LIST WITH THE ID '" + mediaTitle + "'\u001B[31m");
         }
     }
 

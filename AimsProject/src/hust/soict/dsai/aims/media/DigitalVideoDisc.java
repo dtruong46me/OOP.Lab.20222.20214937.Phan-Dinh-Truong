@@ -44,7 +44,16 @@ public class DigitalVideoDisc extends Disc implements Playable{
 
     @Override
     public String toString() {
-        return "DigitalVideoDisc [id=" + id + ", title=" + title + ", category=" 
-            + category + ", cost=" + cost + ", director=" + director + ", length=" + length + "]";
+        // return "DigitalVideoDisc [id=" + id + ", title=" + title + ", category=" 
+        //     + category + ", cost=" + cost + ", director=" + director + ", length=" + length + "]";
+        return "\n\u001B[33m------ DIGITAL VIDEO DISC ------\n\u001B[37m" + 
+               " - ID      : " + id + "\n" + 
+               " - Title   : " + title + "\n" + 
+               " - Category: " + category + "\n" + 
+               " - Cost    : " + cost + "\n" + 
+               " - Director: " + director + "\n" + 
+               " - Length  : " + length + "\n" +
+               "--------------------------------\n";
+
     }
 }

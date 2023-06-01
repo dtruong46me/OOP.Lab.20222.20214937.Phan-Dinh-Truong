@@ -25,7 +25,7 @@ public class CompactDisc extends Disc implements Playable{
             System.out.println("\u001B[31mTHE TRACK IS ALREADY IN THE LIST OF TRACKS!\u001B[37m");
         } else {
             tracks.add(track);
-            System.out.println("\u001B[35mTHE TRACK '" + track.getTitle() + "' HAS BEEN ADDED TO THE LIST OF TRACKS!\u001B[37m");
+            System.out.println("\u001B[32mTHE TRACK '" + track.getTitle() + "' HAS BEEN ADDED TO THE LIST OF TRACKS!\u001B[37m");
         }
     }
 
@@ -61,9 +61,19 @@ public class CompactDisc extends Disc implements Playable{
 
     @Override
     public String toString() {
-        return "CompactDisc [id=" + id + ", title=" + title + ", category=" 
-            + category + ", cost=" + cost + ", director= " + director + ", length=" 
-            + length + ", artist=" + artist + ", tracks=" + tracks.toString() + "]";
+        // return "CompactDisc [id=" + id + ", title=" + title + ", category=" 
+        //     + category + ", cost=" + cost + ", director= " + director + ", length=" 
+        //     + length + ", artist=" + artist + ", tracks=" + tracks.toString() + "]";
+        return "\n\u001B[33m--------- COMPARC DISC ---------\n\u001B[37m" + 
+               " - ID      : " + id + "\n" + 
+               " - Title   : " + title + "\n" + 
+               " - Category: " + category + "\n" + 
+               " - Cost    : " + cost + "\n" + 
+               " - Director: " + director + "\n" + 
+               " - Length  : " + length + "\n" + 
+               " - Artist  : " + artist + "\n" + 
+               " - Tracks  : " + tracks.toString() + "\n" + 
+               "--------------------------------\n";
     }
 
     public String getArtist() {
