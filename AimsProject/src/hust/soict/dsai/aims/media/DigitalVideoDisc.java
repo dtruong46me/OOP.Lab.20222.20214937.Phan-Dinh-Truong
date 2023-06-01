@@ -46,4 +46,10 @@ public class DigitalVideoDisc extends Disc implements Playable{
         return "DigitalVideoDisc [id=" + id + ", title=" + title + ", category=" 
             + category + ", cost=" + cost + ", director=" + director + ", length=" + length + "]";
     }
+
+    @Override
+    public int compareTo(Media o) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'compareTo'");
+    }
 }

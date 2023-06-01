@@ -25,14 +25,14 @@ public class CompactDisc extends Disc implements Playable{
             System.out.println("\u001B[31mThe track is already in the list of tracks!\u001B[37m");
         } else {
             tracks.add(track);
-            System.out.println("\u001B[32mThe track '" + track.getTitle() + "' has been ADDED to the list of tracks!\u001B[37m");
+            System.out.println("\u001B[35mThe track '" + track.getTitle() + "' has been ADDED to the list of tracks!\u001B[37m");
         }
     }
 
     public void removeTrack(Track track) {
         if (tracks.contains(track)) {
             tracks.remove(track);
-            System.out.println("\u001B[32mThe track '" + track.getTitle() + "' has been REMOVED from the list of tracks!\u001B[37m");
+            System.out.println("\u001B[35mThe track '" + track.getTitle() + "' has been REMOVED from the list of tracks!\u001B[37m");
         } else {
             System.out.println("\u001B[31mThe track is NOT EXIST in the list of tracks!\u001B[37m");
         }

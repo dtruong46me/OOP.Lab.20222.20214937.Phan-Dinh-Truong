@@ -1,6 +1,7 @@
 package AimsProject.src.hust.soict.dsai.aims.media;
+import java.util.Comparator;
 
-public abstract class Media {
+public abstract class Media implements Comparable<Media>{
     protected static int nbMedias = 100000;
     protected int id;
     protected String title;
@@ -31,6 +32,14 @@ public abstract class Media {
                 + " - " + getCategory() 
                 + " - :" + getCost() + "$";
     }
+
+    @Override 
+    public int compareTo(Media other) {
+        return this.title.compareTo(other.title);
+    }
+
+    public static final Comparator<Media> COMPARE_BY_TITLE_COST = new MediaComparatorByTitleCost();
+    public static final Comparator<Media> COMPARE_BY_COST_TITLE = new MediaComparatorByCostTitle();     
 
     public int getId() {
         return id;

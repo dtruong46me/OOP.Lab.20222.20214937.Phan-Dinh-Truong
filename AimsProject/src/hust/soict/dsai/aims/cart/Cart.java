@@ -1,13 +1,26 @@
 package AimsProject.src.hust.soict.dsai.aims.cart;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import AimsProject.src.hust.soict.dsai.aims.media.Media;
 
 public class Cart {
 
-    private List<Media> itemsOrdered = new ArrayList<>();
+    private List<Media> itemsOrdered;
+
+    public Cart() {
+        itemsOrdered = new ArrayList<>();
+    }
+
+    public void sortMediaByTitleCost() {
+        Collections.sort(itemsOrdered, Media.COMPARE_BY_TITLE_COST);
+    }  
+
+    public void sortMediaByCostTitle() {
+        Collections.sort(itemsOrdered, Media.COMPARE_BY_COST_TITLE);
+    }
 
     public void addMedia(Media media) {
         itemsOrdered.add(media);
@@ -33,33 +46,6 @@ public class Cart {
     public List<Media> getItemOrdered() {
         return itemsOrdered;
     }
-
-    // public void searchByTitle(String title) {
-    //     int count = 0;
-        
-    //     for (Media media : itemsOrdered) {
-    //         if (media.search(title)) {
-    //             System.out.println(media.toString());
-    //             count = count + 1;
-    //         }
-    //     }
-    //     if (count == 0) {
-    //         System.out.println("No match found for title = '" + title + "'!");
-    //     }
-    // }
-
-    // public void searchByID(int id) {
-    //     boolean found = false;
-    //     for (int i = 0; i< qtyOrdered; i++) {
-    //         if (itemsOrdered[i].getId() == id) {
-    //             System.out.println(itemsOrdered[i].toString());
-    //             found = true;
-    //         }
-    //     }
-    //     if (!found) {
-    //         System.out.println("No match found for id = '" + id + "'!");
-    //     }
-    // }
 
     public void printOrder() {
         
