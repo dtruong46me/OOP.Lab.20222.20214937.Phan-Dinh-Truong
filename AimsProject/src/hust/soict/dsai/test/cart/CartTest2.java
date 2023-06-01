@@ -11,7 +11,7 @@ import AimsProject.src.hust.soict.dsai.aims.media.Track;
 
 public class CartTest2 {
     public static void main(String[] args) {
-        Cart cart = new AimsProject.src.hust.soict.dsai.aims.cart.Cart();
+        Cart cart = new Cart();
 
         // Media1
         Media dvd = new DigitalVideoDisc("DVDTitle1", "DVDCategory1", 15.95f, "DVDDirector1", 20);

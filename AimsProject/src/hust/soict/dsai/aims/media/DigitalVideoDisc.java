@@ -19,8 +19,9 @@ public class DigitalVideoDisc extends Disc implements Playable{
     }
 
     public void play() {
-        System.out.println("Playing DVD: " + getTitle());
-        System.out.println("DVD length: " + getLength() + " minutes");
+        System.out.println("\n\u001B[33mPLAY THE MEDIA\u001B[37m");
+        System.out.println(" - Playing DVD : " + getTitle());
+        System.out.println(" - DVD length  : " + getLength() + " minutes");
     }
 
     public boolean search(String title) {
@@ -43,7 +44,16 @@ public class DigitalVideoDisc extends Disc implements Playable{
 
     @Override
     public String toString() {
-        return "DigitalVideoDisc [id=" + id + ", title=" + title + ", category=" 
-            + category + ", cost=" + cost + ", director=" + director + ", length=" + length + "]";
+        // return "DigitalVideoDisc [id=" + id + ", title=" + title + ", category=" 
+        //     + category + ", cost=" + cost + ", director=" + director + ", length=" + length + "]";
+        return "\n\u001B[33m------ DIGITAL VIDEO DISC ------\n\u001B[37m" + 
+               " - ID      : " + id + "\n" + 
+               " - Title   : " + title + "\n" + 
+               " - Category: " + category + "\n" + 
+               " - Cost    : " + cost + "\n" + 
+               " - Director: " + director + "\n" + 
+               " - Length  : " + length + "\n" +
+               "--------------------------------\n";
+
     }
 }

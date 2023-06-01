@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Book extends Media{
-    private ArrayList<String> authors;
+    private ArrayList<String> authors = new ArrayList<>();
 
     public Book() {
         super();
@@ -14,41 +14,44 @@ public class Book extends Media{
         super(title);
     }
 
+    public Book (String title, String category, float cost) {
+        super(title, category, cost);
+    }
+
     public Book(String title, String category, float cost, ArrayList<String> authors) {
         super(title, category, cost);
         this.authors = authors;
     }
 
-    public boolean findAuthor(String authorName) {
-        for (String author : authors) {
-            if (authorName.toLowerCase() == author.toLowerCase()) {
-                return true;
-            }
-        }
-        return false;
-    }
-
     @Override
     public String toString() {
-        return "Book [id=" + id + ", title=" + title + ", category=" + category 
-        + ", cost=" + cost + ", authors=" + authors + "]";
+        // return "Book [id=" + id + ", title=" + title + ", category=" + category 
+        // + ", cost=" + cost + ", authors=" + authors + "]";
+        return "\n\u001B[33m---------- BOOK DETAIL----------\n\u001B[37m" + 
+               " - ID      : " + id + "\n" + 
+               " - Title   : " + title + "\n" + 
+               " - Category: " + category + "\n" + 
+               " - Cost    : " + cost + "\n" + 
+               " - Authors : " + authors + "\n" + 
+               "--------------------------------\n";
     }
 
     public void addAuthor(String authorName) {
-        if (!findAuthor(authorName)) {
-            authors.add(authorName);
-            System.out.println("\u001B[32mThe author '"+ authorName + "' has been ADDED to the list of authors!\u001B[37m");
+        if (authors.contains(authorName)) {
+            System.out.println("\u001B[31mTHE AUTHOR '"+ authorName +"' IS ALREADY IN THE LIST OF AUTHORS!\u001B[37m");
         } else {
-            System.out.println("\u001B[31mThe author '"+ authorName +"'is already in the list of authors!\u001B[37m");
+            authors.add(authorName);
+            System.out.println("\u001B[32mTHE AUTHOR '"+ authorName + "' HAS BEEN ADDED TO THE LIST OF AUTHORS!\u001B[37m");
+        
         }
     }
 
     public void removeAuthor(String authorName) {
         if (authors.contains(authorName)) {
             authors.remove(authorName);
-            System.out.println("\u001B[32mThe author '" + authorName + "' is removed successfully!\u001B[37m");
+            System.out.println("\u001B[32mTHE AUTHOR '" + authorName + "' HAS BEEN REMOVED FROM THE LIST OF AUTHORS!\u001B[37m");
         } else {
-            System.out.println("\u001B[31mCannot find the author '" + authorName + "'!\u001B[37m");
+            System.out.println("\u001B[31mCANNOT FIND THE AUTHOR '" + authorName + "'!\u001B[37m");
         }
     }
 
@@ -91,5 +94,4 @@ public class Book extends Media{
     public void setAuthors(ArrayList<String> authors) {
         this.authors = authors;
     }
-
 }
