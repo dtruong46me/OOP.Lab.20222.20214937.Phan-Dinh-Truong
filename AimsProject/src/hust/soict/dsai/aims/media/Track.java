@@ -31,7 +31,7 @@ public class Track implements Playable{
 
     @Override
     public String toString() {
-        return "(" + title + ", " + length + ")";
+        return "(" + title + "| " + length + ")";
     }
 
     public String getTitle() {

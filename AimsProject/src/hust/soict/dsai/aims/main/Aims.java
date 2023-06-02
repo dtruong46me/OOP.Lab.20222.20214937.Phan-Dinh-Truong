@@ -27,7 +27,7 @@ public class Aims {
     private static final String STORE_FILE = "AimsStore.txt";
     private static File file = new File("AimsProject/src/hust/soict/dsai/aims/store/" + STORE_FILE);
     private static String filePath = file.getAbsolutePath();
-    private static final String DELIMITER = ",";
+    private static final String DELIMITER = ";";
 
     public static void main(String[] args) {
         System.out.println(filePath);
@@ -83,7 +83,8 @@ public class Aims {
                     addMediaToCart();
                     break;
                 case 3:
-                    seeCurrentCart();
+                    // seeCurrentCart();
+                    playMedia();
                     break;
                 case 4:
                     cart.printOrder();
@@ -506,7 +507,7 @@ public class Aims {
                 String[] trackArray = trackString.split(", ");
                 ArrayList<Track> tracks = new ArrayList<>();
                 for (String track : trackArray) {
-                    String[] trackInfo = track.substring(1, track.length()-1).split(", ");
+                    String[] trackInfo = track.substring(1, track.length()-1).split("\\| ");
                     String trackTitle = trackInfo[0];
                     int trackLength = Integer.parseInt(trackInfo[1]);
                     tracks.add(new Track(trackTitle, trackLength));
