@@ -37,7 +37,7 @@ public class Book extends Media{
     }
 
     public String toBackupString() {
-        return id + "," + title + "," + category + "," + cost + "," + authors;
+        return id + ";" + title + ";" + category + ";" + cost + ";" + authors;
     }
 
     public void addAuthor(String authorName) {
