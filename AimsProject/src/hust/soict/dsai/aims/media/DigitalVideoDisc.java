@@ -54,6 +54,10 @@ public class DigitalVideoDisc extends Disc implements Playable{
                " - Director: " + director + "\n" + 
                " - Length  : " + length + "\n" +
                "--------------------------------\n";
+    }
 
+    @Override
+    public String toBackupString() {
+        return id + "," + title + "," + category + "," + cost + "," + director + "," + length;
     }
 }

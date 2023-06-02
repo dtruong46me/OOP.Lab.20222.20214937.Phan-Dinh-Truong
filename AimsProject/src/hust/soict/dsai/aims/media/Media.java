@@ -33,6 +33,10 @@ public abstract class Media implements Comparable<Media>{
                 + " - " + getCost() + "$";
     }
 
+    public String toBackupString() {
+        return id + "," + title + "," + category + "," + cost;
+    }
+
     @Override 
     public int compareTo(Media other) {
         return this.title.compareTo(other.title);

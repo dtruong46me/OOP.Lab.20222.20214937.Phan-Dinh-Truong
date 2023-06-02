@@ -76,6 +76,10 @@ public class CompactDisc extends Disc implements Playable{
                "--------------------------------\n";
     }
 
+    public String toBackupString() {
+        return id + "," + title + "," + category + "," + cost + "," + director + "," + length + "," + artist + "," + tracks.toString();
+    }
+
     public String getArtist() {
         return artist;
     }
