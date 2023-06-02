@@ -1,0 +1,11 @@
+DVD,100001,The Lion King,Animation,19.95,Roger Allers,87
+Book,100002,Clean Code,Software Development,29.99,[Robert C. Martin]
+Book,100003,Harry Potter and the Philosopher's Stone,Fantasy,12.99,[J.K.Rowlin]
+DVD,100004,Inception,Sci-Fi,14.99,Christopher Nolan,148
+DVD,100005,Avengers: Endgame,Action,24.99,Anthony Russo,181
+Book,100006,Java: A Beginner's Guide,Programming,19.99,[Herbert Schildt]
+DVD,100007,Titanic,Romance,14.99,James Cameron,194
+Book,100008,The Great Gatsby,Classic,12.99,[F. Scott Fitzgerald]
+Book,100009,To Kill a Mockingbird,Fiction,15.99,[Harper Lee]
+Book,100010,Thriller,Pop,9.99,[Author1, Author2]
+CD,100011,Thriller,Pop,9.99,Michael Jackson,42,Michael Jackson,[(Track 1, 12), (Track 2, 5), (Track 3, 7)]
