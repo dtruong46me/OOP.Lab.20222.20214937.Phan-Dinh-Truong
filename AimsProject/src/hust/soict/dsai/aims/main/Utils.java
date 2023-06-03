@@ -6,6 +6,7 @@ public class Utils {
         System.out.println("Enter 1. View store");
         System.out.println("Enter 2. Update store");
         System.out.println("Enter 3. See current cart");
+        System.out.println("Enter 4. Back up store");
         System.out.println("Enter 0. Exit");
         System.out.println("------------------------------------\u001B[37m");
     }

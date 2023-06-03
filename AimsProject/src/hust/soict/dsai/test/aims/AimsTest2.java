@@ -1,4 +1,4 @@
-package AimsProject.src.hust.soict.dsai.aims.main;
+package AimsProject.src.hust.soict.dsai.test.aims;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -20,14 +20,14 @@ import AimsProject.src.hust.soict.dsai.aims.media.Playable;
 import AimsProject.src.hust.soict.dsai.aims.media.Track;
 import AimsProject.src.hust.soict.dsai.aims.store.Store;
 
-public class Aims {
+public class AimsTest2 {
     private static Store store = new Store();
     private static Cart cart = new Cart();
     private static Scanner sc = new Scanner(System.in);
     private static final String STORE_FILE = "AimsStore.txt";
     private static File file = new File("AimsProject/src/hust/soict/dsai/aims/store/" + STORE_FILE);
     private static String filePath = file.getAbsolutePath();
-    private static final String DELIMITER = ";";
+    private static final String DELIMITER = ",";
 
     public static void main(String[] args) {
         System.out.println(filePath);
@@ -83,8 +83,7 @@ public class Aims {
                     addMediaToCart();
                     break;
                 case 3:
-                    // seeCurrentCart();
-                    playMedia();
+                    seeCurrentCart();
                     break;
                 case 4:
                     cart.printOrder();
@@ -181,7 +180,6 @@ public class Aims {
             }
 
             Utils.cartMenu();
-            System.out.print("Your choice: ");
             choice = sc.nextInt();
             sc.nextLine();
         }
@@ -436,12 +434,7 @@ public class Aims {
         for (Media media : cart.getItemOrdered() ) {
             String title = media.getTitle();
             String cost = String.format("%.2f", media.getCost());
-
-            if (title.length() > 28) {
-                title = title.substring(0, 26) + "..";
-            }
-            System.out.printf("|  - %-28s%7s $ |\n", title, cost);
-
+            System.out.printf("|  - %-25s%10s $ |\n", title, cost);
         }
         System.out.println("|                                          |");
         String totalCost = String.format("%.2f", cart.getTotalCost());
@@ -507,7 +500,7 @@ public class Aims {
                 String[] trackArray = trackString.split(", ");
                 ArrayList<Track> tracks = new ArrayList<>();
                 for (String track : trackArray) {
-                    String[] trackInfo = track.substring(1, track.length()-1).split("\\| ");
+                    String[] trackInfo = track.substring(1, track.length()-1).split(", ");
                     String trackTitle = trackInfo[0];
                     int trackLength = Integer.parseInt(trackInfo[1]);
                     tracks.add(new Track(trackTitle, trackLength));

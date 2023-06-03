@@ -41,4 +41,8 @@ public class Store {
         }
         System.out.println("-------------------------------------------------\n\u001B[37m");
     }
+
+    public ArrayList<Media> getItemsInStore() {
+        return itemsInStore;
+    }
 }

@@ -36,6 +36,10 @@ public class Book extends Media{
                "--------------------------------\n";
     }
 
+    public String toBackupString() {
+        return id + ";" + title + ";" + category + ";" + cost + ";" + authors;
+    }
+
     public void addAuthor(String authorName) {
         if (authors.contains(authorName)) {
             System.out.println("\u001B[31mTHE AUTHOR '"+ authorName +"' IS ALREADY IN THE LIST OF AUTHORS!\u001B[37m");
