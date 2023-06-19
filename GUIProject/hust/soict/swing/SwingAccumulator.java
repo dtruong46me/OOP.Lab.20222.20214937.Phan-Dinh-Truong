@@ -1,4 +1,4 @@
-package GUIProject.hust.soict.dsai.swing;
+package hust.soict.swing;
 
 import java.awt.Container;
 import java.awt.GridLayout;
