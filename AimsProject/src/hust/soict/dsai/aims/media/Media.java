@@ -34,7 +34,7 @@ public abstract class Media implements Comparable<Media>{
     }
 
     public String toBackupString() {
-        return id + "," + title + "," + category + "," + cost;
+        return id + ";" + title + ";" + category + ";" + cost;
     }
 
     @Override 
