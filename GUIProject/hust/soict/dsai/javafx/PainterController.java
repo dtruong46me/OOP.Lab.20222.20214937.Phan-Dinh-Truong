@@ -9,11 +9,11 @@ import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
 
 public class PainterController {
-    @FXML
-    private Pane drawingAreaMouseDragged;
+    // @FXML
+    // private Pane drawingAreaMouseDragged;
 
     @FXML
-    private VBox drawingAreaPane;
+    private Pane drawingAreaPane;
 
     @FXML
     void clearButtonPressed(ActionEvent event) {

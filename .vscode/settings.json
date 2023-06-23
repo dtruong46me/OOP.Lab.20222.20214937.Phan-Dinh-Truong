@@ -1,8 +1,0 @@
-{
-    "type": "java",
-    "name": "Painter",
-    "request": "launch",
-    "mainClass": "GUIProject.hust.soict.dsai.javafx.Painter",
-    "projectName": "OOP.Lab.20222.20214937.Phan-Dinh-Truong_78da96d7",
-    "vmArgs": "--module-path \"C:/Program Files/Eclipse Adoptium/javafx-sdk-20.0.1/lib\" --add-modules javafx.controls,javafx.fxml"
-}

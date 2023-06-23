@@ -1,0 +1,239 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Aims",
+            "request": "launch",
+            "mainClass": "AimsProject.src.hust.soict.dsai.aims.main.Aims",
+            "projectName": "OOP.Lab.20222.20214937.Phan-Dinh-Truong_78da96d7"
+        },
+        {
+            "type": "java",
+            "name": "StoreScreen",
+            "request": "launch",
+            "mainClass": "AimsProject.src.hust.soict.dsai.aims.screen.StoreScreen",
+            "projectName": "OOP.Lab.20222.20214937.Phan-Dinh-Truong_78da96d7"
+        },
+        {
+            "type": "java",
+            "name": "AimsTest1",
+            "request": "launch",
+            "mainClass": "AimsProject.src.hust.soict.dsai.test.aims.AimsTest1",
+            "projectName": "OOP.Lab.20222.20214937.Phan-Dinh-Truong_78da96d7"
+        },
+        {
+            "type": "java",
+            "name": "AimsTest2",
+            "request": "launch",
+            "mainClass": "AimsProject.src.hust.soict.dsai.test.aims.AimsTest2",
+            "projectName": "OOP.Lab.20222.20214937.Phan-Dinh-Truong_78da96d7"
+        },
+        {
+            "type": "java",
+            "name": "CartTest",
+            "request": "launch",
+            "mainClass": "AimsProject.src.hust.soict.dsai.test.cart.CartTest",
+            "projectName": "OOP.Lab.20222.20214937.Phan-Dinh-Truong_78da96d7"
+        },
+        {
+            "type": "java",
+            "name": "CartTest2",
+            "request": "launch",
+            "mainClass": "AimsProject.src.hust.soict.dsai.test.cart.CartTest2",
+            "projectName": "OOP.Lab.20222.20214937.Phan-Dinh-Truong_78da96d7"
+        },
+        {
+            "type": "java",
+            "name": "CartTest3",
+            "request": "launch",
+            "mainClass": "AimsProject.src.hust.soict.dsai.test.cart.CartTest3",
+            "projectName": "OOP.Lab.20222.20214937.Phan-Dinh-Truong_78da96d7"
+        },
+        {
+            "type": "java",
+            "name": "CartTest4",
+            "request": "launch",
+            "mainClass": "AimsProject.src.hust.soict.dsai.test.cart.CartTest4",
+            "projectName": "OOP.Lab.20222.20214937.Phan-Dinh-Truong_78da96d7"
+        },
+        {
+            "type": "java",
+            "name": "TestPassingParameter",
+            "request": "launch",
+            "mainClass": "AimsProject.src.hust.soict.dsai.test.disc.TestPassingParameter",
+            "projectName": "OOP.Lab.20222.20214937.Phan-Dinh-Truong_78da96d7"
+        },
+        {
+            "type": "java",
+            "name": "MediaTest",
+            "request": "launch",
+            "mainClass": "AimsProject.src.hust.soict.dsai.test.media.MediaTest",
+            "projectName": "OOP.Lab.20222.20214937.Phan-Dinh-Truong_78da96d7"
+        },
+        {
+            "type": "java",
+            "name": "StoreTest2",
+            "request": "launch",
+            "mainClass": "AimsProject.src.hust.soict.dsai.test.store.StoreTest2",
+            "projectName": "OOP.Lab.20222.20214937.Phan-Dinh-Truong_78da96d7"
+        },
+        {
+            "type": "java",
+            "name": "Painter",
+            "request": "launch",
+            "mainClass": "GUIProject.hust.soict.dsai.javafx.Painter",
+            "projectName": "OOP.Lab.20222.20214937.Phan-Dinh-Truong_78da96d7",
+            "vmArgs": "--module-path \"C:/Program Files/Eclipse Adoptium/javafx-sdk-20.0.1/lib\" --add-modules javafx.controls,javafx.fxml"
+        },
+        {
+            "type": "java",
+            "name": "StoreScreen(1)",
+            "request": "launch",
+            "mainClass": "GUIProject.hust.soict.dsai.screen.StoreScreen",
+            "projectName": "OOP.Lab.20222.20214937.Phan-Dinh-Truong_78da96d7"
+        },
+        {
+            "type": "java",
+            "name": "AWTAccumulator",
+            "request": "launch",
+            "mainClass": "GUIProject.hust.soict.dsai.swing.AWTAccumulator",
+            "projectName": "OOP.Lab.20222.20214937.Phan-Dinh-Truong_78da96d7"
+        },
+        {
+            "type": "java",
+            "name": "NumberGrid",
+            "request": "launch",
+            "mainClass": "GUIProject.hust.soict.dsai.swing.NumberGrid",
+            "projectName": "OOP.Lab.20222.20214937.Phan-Dinh-Truong_78da96d7"
+        },
+        {
+            "type": "java",
+            "name": "SwingAccumulator",
+            "request": "launch",
+            "mainClass": "GUIProject.hust.soict.dsai.swing.SwingAccumulator",
+            "projectName": "OOP.Lab.20222.20214937.Phan-Dinh-Truong_78da96d7"
+        },
+        {
+            "type": "java",
+            "name": "BinaryFileCreator",
+            "request": "launch",
+            "mainClass": "OtherProjects.hust.soict.dsai.garbage.BinaryFileCreator",
+            "projectName": "OOP.Lab.20222.20214937.Phan-Dinh-Truong_78da96d7"
+        },
+        {
+            "type": "java",
+            "name": "ConcatenationInLoops",
+            "request": "launch",
+            "mainClass": "OtherProjects.hust.soict.dsai.garbage.ConcatenationInLoops",
+            "projectName": "OOP.Lab.20222.20214937.Phan-Dinh-Truong_78da96d7"
+        },
+        {
+            "type": "java",
+            "name": "GarbageCreator",
+            "request": "launch",
+            "mainClass": "OtherProjects.hust.soict.dsai.garbage.GarbageCreator",
+            "projectName": "OOP.Lab.20222.20214937.Phan-Dinh-Truong_78da96d7"
+        },
+        {
+            "type": "java",
+            "name": "NoGarbage",
+            "request": "launch",
+            "mainClass": "OtherProjects.hust.soict.dsai.garbage.NoGarbage",
+            "projectName": "OOP.Lab.20222.20214937.Phan-Dinh-Truong_78da96d7"
+        },
+        {
+            "type": "java",
+            "name": "CalculateTwoNums",
+            "request": "launch",
+            "mainClass": "OtherProjects.hust.soict.dsai.lab01.CalculateTwoNums",
+            "projectName": "OOP.Lab.20222.20214937.Phan-Dinh-Truong_78da96d7"
+        },
+        {
+            "type": "java",
+            "name": "ChoosingOption",
+            "request": "launch",
+            "mainClass": "OtherProjects.hust.soict.dsai.lab01.ChoosingOption",
+            "projectName": "OOP.Lab.20222.20214937.Phan-Dinh-Truong_78da96d7"
+        },
+        {
+            "type": "java",
+            "name": "DaysInMonth",
+            "request": "launch",
+            "mainClass": "OtherProjects.hust.soict.dsai.lab01.DaysInMonth",
+            "projectName": "OOP.Lab.20222.20214937.Phan-Dinh-Truong_78da96d7"
+        },
+        {
+            "type": "java",
+            "name": "DisplayTriangle",
+            "request": "launch",
+            "mainClass": "OtherProjects.hust.soict.dsai.lab01.DisplayTriangle",
+            "projectName": "OOP.Lab.20222.20214937.Phan-Dinh-Truong_78da96d7"
+        },
+        {
+            "type": "java",
+            "name": "FirstDialog",
+            "request": "launch",
+            "mainClass": "OtherProjects.hust.soict.dsai.lab01.FirstDialog",
+            "projectName": "OOP.Lab.20222.20214937.Phan-Dinh-Truong_78da96d7"
+        },
+        {
+            "type": "java",
+            "name": "HelloNameDialog",
+            "request": "launch",
+            "mainClass": "OtherProjects.hust.soict.dsai.lab01.HelloNameDialog",
+            "projectName": "OOP.Lab.20222.20214937.Phan-Dinh-Truong_78da96d7"
+        },
+        {
+            "type": "java",
+            "name": "HelloWorld",
+            "request": "launch",
+            "mainClass": "OtherProjects.hust.soict.dsai.lab01.HelloWorld",
+            "projectName": "OOP.Lab.20222.20214937.Phan-Dinh-Truong_78da96d7"
+        },
+        {
+            "type": "java",
+            "name": "InputFromKeyboard",
+            "request": "launch",
+            "mainClass": "OtherProjects.hust.soict.dsai.lab01.InputFromKeyboard",
+            "projectName": "OOP.Lab.20222.20214937.Phan-Dinh-Truong_78da96d7"
+        },
+        {
+            "type": "java",
+            "name": "MatrixAddition",
+            "request": "launch",
+            "mainClass": "OtherProjects.hust.soict.dsai.lab01.MatrixAddition",
+            "projectName": "OOP.Lab.20222.20214937.Phan-Dinh-Truong_78da96d7"
+        },
+        {
+            "type": "java",
+            "name": "ShowTwoNumbers",
+            "request": "launch",
+            "mainClass": "OtherProjects.hust.soict.dsai.lab01.ShowTwoNumbers",
+            "projectName": "OOP.Lab.20222.20214937.Phan-Dinh-Truong_78da96d7"
+        },
+        {
+            "type": "java",
+            "name": "SolvingEquation",
+            "request": "launch",
+            "mainClass": "OtherProjects.hust.soict.dsai.lab01.SolvingEquation",
+            "projectName": "OOP.Lab.20222.20214937.Phan-Dinh-Truong_78da96d7"
+        },
+        {
+            "type": "java",
+            "name": "SortArray",
+            "request": "launch",
+            "mainClass": "OtherProjects.hust.soict.dsai.lab01.SortArray",
+            "projectName": "OOP.Lab.20222.20214937.Phan-Dinh-Truong_78da96d7"
+        }
+    ]
+}
