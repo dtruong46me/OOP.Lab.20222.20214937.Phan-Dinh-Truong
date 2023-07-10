@@ -1,4 +1,4 @@
-package AimsProject.src.hust.soict.dsai.aims.media;
+package hust.soict.dsai.aims.media;
 import java.util.Comparator;
 
 public abstract class Media implements Comparable<Media>{

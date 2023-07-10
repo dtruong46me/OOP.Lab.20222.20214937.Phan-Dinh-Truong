@@ -1,8 +1,8 @@
-package AimsProject.src.hust.soict.dsai.aims.store;
+package hust.soict.dsai.aims.store;
 
 import java.util.ArrayList;
 
-import AimsProject.src.hust.soict.dsai.aims.media.Media;
+import hust.soict.dsai.aims.media.Media;
 
 public class Store {
     private ArrayList<Media> itemsInStore = new ArrayList<>();
@@ -10,6 +10,12 @@ public class Store {
     public void addMedia(Media media) {
         itemsInStore.add(media);
         System.out.println("\u001B[32mTHE MEDIA '" + media.getTitle() + "' HAS BEEN ADDED TO THE STORE!\u001B[37m");
+    }
+
+    public void display(){
+        for (Media media: itemsInStore){
+            System.out.println(media);
+        }
     }
 
     public void removeMedia(Media media) {

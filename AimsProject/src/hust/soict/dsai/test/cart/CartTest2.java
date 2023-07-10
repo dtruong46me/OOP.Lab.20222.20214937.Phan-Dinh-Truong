@@ -1,13 +1,13 @@
-package AimsProject.src.hust.soict.dsai.test.cart;
+package hust.soict.dsai.test.cart;
 
 import java.util.ArrayList;
 
-import AimsProject.src.hust.soict.dsai.aims.cart.Cart;
-import AimsProject.src.hust.soict.dsai.aims.media.Book;
-import AimsProject.src.hust.soict.dsai.aims.media.CompactDisc;
-import AimsProject.src.hust.soict.dsai.aims.media.DigitalVideoDisc;
-import AimsProject.src.hust.soict.dsai.aims.media.Media;
-import AimsProject.src.hust.soict.dsai.aims.media.Track;
+import hust.soict.dsai.aims.cart.Cart;
+import hust.soict.dsai.aims.media.Book;
+import hust.soict.dsai.aims.media.CompactDisc;
+import hust.soict.dsai.aims.media.DigitalVideoDisc;
+import hust.soict.dsai.aims.media.Media;
+import hust.soict.dsai.aims.media.Track;
 
 public class CartTest2 {
     public static void main(String[] args) {

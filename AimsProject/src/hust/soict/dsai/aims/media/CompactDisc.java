@@ -1,6 +1,7 @@
-package AimsProject.src.hust.soict.dsai.aims.media;
+package hust.soict.dsai.aims.media;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class CompactDisc extends Disc implements Playable{
     private String artist;
@@ -8,6 +9,17 @@ public class CompactDisc extends Disc implements Playable{
 
     public CompactDisc() {
         super();
+    }
+
+    public CompactDisc(String title, String category, float cost, String director) {
+        super(title, category, cost, director);
+    }
+
+    public CompactDisc(int id, String title, String category, float cost, String director, String artist,
+            ArrayList<Track> tracks) {
+        super(title, category, cost, 0, director);
+        this.artist = artist;
+        this.tracks = tracks;
     }
 
     public CompactDisc(String title, String category, float cost, int length, String director) {

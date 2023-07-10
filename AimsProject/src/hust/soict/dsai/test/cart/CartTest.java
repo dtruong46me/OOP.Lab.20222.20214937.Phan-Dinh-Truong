@@ -1,8 +1,8 @@
-package AimsProject.src.hust.soict.dsai.test.cart;
+package hust.soict.dsai.test.cart;
 
-import AimsProject.src.hust.soict.dsai.aims.cart.Cart;
-import AimsProject.src.hust.soict.dsai.aims.media.DigitalVideoDisc;
-import AimsProject.src.hust.soict.dsai.aims.media.Media;
+import hust.soict.dsai.aims.cart.Cart;
+import hust.soict.dsai.aims.media.DigitalVideoDisc;
+import hust.soict.dsai.aims.media.Media;
 
 public class CartTest {
     public static void main(String[] args) {
