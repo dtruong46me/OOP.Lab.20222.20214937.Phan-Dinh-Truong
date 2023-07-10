@@ -1,4 +1,4 @@
-package AimsProject.src.hust.soict.dsai.aims.media;
+package hust.soict.dsai.aims.media;
 
 public class Track implements Playable{
     private String title;

@@ -1,12 +1,12 @@
-package AimsProject.src.hust.soict.dsai.test.media;
+package hust.soict.dsai.test.media;
 
 import java.util.ArrayList;
 
-import AimsProject.src.hust.soict.dsai.aims.media.Book;
-import AimsProject.src.hust.soict.dsai.aims.media.CompactDisc;
-import AimsProject.src.hust.soict.dsai.aims.media.DigitalVideoDisc;
-import AimsProject.src.hust.soict.dsai.aims.media.Media;
-import AimsProject.src.hust.soict.dsai.aims.media.Track;
+import hust.soict.dsai.aims.media.Book;
+import hust.soict.dsai.aims.media.CompactDisc;
+import hust.soict.dsai.aims.media.DigitalVideoDisc;
+import hust.soict.dsai.aims.media.Media;
+import hust.soict.dsai.aims.media.Track;
 
 public class MediaTest {
     public static void main(String[] args) {

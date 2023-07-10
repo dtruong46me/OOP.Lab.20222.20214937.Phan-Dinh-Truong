@@ -1,4 +1,4 @@
-package AimsProject.src.hust.soict.dsai.aims.screen;
+package hust.soict.dsai.aims.screen;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -25,12 +25,12 @@ import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.JPanel;
 
-import AimsProject.src.hust.soict.dsai.aims.media.Book;
-import AimsProject.src.hust.soict.dsai.aims.media.CompactDisc;
-import AimsProject.src.hust.soict.dsai.aims.media.DigitalVideoDisc;
-import AimsProject.src.hust.soict.dsai.aims.media.Media;
-import AimsProject.src.hust.soict.dsai.aims.media.Track;
-import AimsProject.src.hust.soict.dsai.aims.store.Store;
+import hust.soict.dsai.aims.media.Book;
+import hust.soict.dsai.aims.media.CompactDisc;
+import hust.soict.dsai.aims.media.DigitalVideoDisc;
+import hust.soict.dsai.aims.media.Media;
+import hust.soict.dsai.aims.media.Track;
+import hust.soict.dsai.aims.store.Store;
 
 public class StoreScreen extends JFrame{
     private static Store store = new Store();
@@ -113,6 +113,21 @@ public class StoreScreen extends JFrame{
         setVisible(true);
         setTitle("Store");
         setSize(1024, 768);
+    }
+
+    public void updateDisplay() {
+        JPanel center = createCenter(); // Create the updated center panel
+
+        // Remove the existing center panel from the content pane
+        Container cp = getContentPane();
+        cp.remove(1);
+
+        // Add the updated center panel to the content pane
+        cp.add(center, BorderLayout.CENTER);
+
+        // Revalidate and repaint the content pane to reflect the changes
+        cp.revalidate();
+        cp.repaint();
     }
 
     public static void main(String[] args) {

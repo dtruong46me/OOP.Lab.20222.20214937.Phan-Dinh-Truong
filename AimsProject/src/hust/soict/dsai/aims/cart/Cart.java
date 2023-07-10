@@ -1,17 +1,21 @@
-package AimsProject.src.hust.soict.dsai.aims.cart;
+package hust.soict.dsai.aims.cart;
 
 import java.util.ArrayList;
 import java.util.Collections;
 
-import AimsProject.src.hust.soict.dsai.aims.media.Media;
+import hust.soict.dsai.aims.media.Media;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 
 public class Cart {
 
-    private ArrayList<Media> itemsOrdered;
+    // private ArrayList<Media> itemsOrdered;
+    public int cartSize = 0;
+    private ObservableList<Media> itemsOrdered = FXCollections.observableArrayList();
 
-    public Cart() {
-        itemsOrdered = new ArrayList<>();
-    }
+    // public Cart() {
+    //     itemsOrdered = new ArrayList<>();
+    // }
 
     public void sortMediaByTitleCost() {
         Collections.sort(itemsOrdered, Media.COMPARE_BY_TITLE_COST);
@@ -55,11 +59,13 @@ public class Cart {
 
     public void addMedia(Media media) {
         itemsOrdered.add(media);
+        cartSize++;
         System.out.println("\u001B[32mTHE MEIDA '" + media.getTitle() + "' HAS BEEN ADDED TO THE CART!\u001B[0m");
     }
 
     public void removeMedia(Media media) {
         if (itemsOrdered.remove(media)) {
+            cartSize--;
             System.out.println("\u001B[32mTHE MEIDA '" + media.getTitle() + "' HAS BEEN REMOVED FROM THE CART!\u001B[0m");
         } else {
             System.out.println("\u001B[31mTHE MEIDA '" + media.getTitle() + "' IS NOT EXIST IN THE CART!\u001B[0m");
@@ -74,7 +80,7 @@ public class Cart {
         return total;
     }
 
-    public ArrayList<Media> getItemOrdered() {
+    public ObservableList<Media> getItemOrdered() {
         return itemsOrdered;
     }
 
@@ -86,6 +92,16 @@ public class Cart {
         }
         return null;
     }
+
+    public int size() {
+        return cartSize;
+    }
+
+    public void clearCart() {
+        for (Media media: itemsOrdered) {
+            itemsOrdered.remove(media);
+        }
+    } 
 
     public void printOrder() {
         

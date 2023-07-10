@@ -1,4 +1,4 @@
-package AimsProject.src.hust.soict.dsai.test.aims;
+package hust.soict.dsai.test.aims;
 
 public class Utils {
     public static void showMenu() {

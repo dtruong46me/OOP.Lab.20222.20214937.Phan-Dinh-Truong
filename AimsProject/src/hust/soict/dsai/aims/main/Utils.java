@@ -1,4 +1,4 @@
-package AimsProject.src.hust.soict.dsai.aims.main;
+package hust.soict.dsai.aims.main;
 
 public class Utils {
     public static void showMenu() {

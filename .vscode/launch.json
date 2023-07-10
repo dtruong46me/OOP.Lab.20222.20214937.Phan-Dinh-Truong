@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CartScreen",
+            "request": "launch",
+            "mainClass": "hust.soict.dsai.aims.screen.CartScreen",
+            "projectName": "OOP.Lab.20222.20214937.Phan-Dinh-Truong_78da96d7"
+        },
+        {
+            "type": "java",
+            "name": "Aims",
+            "request": "launch",
+            "mainClass": "hust.soict.dsai.aims.main.Aims",
+            "projectName": "OOP.Lab.20222.20214937.Phan-Dinh-Truong_78da96d7"
+        },
+        {
+            "type": "java",
+            "name": "CartScreen",
+            "request": "launch",
+            "mainClass": "AimsProject.src.hust.soict.dsai.aims.screen.CartScreen",
+            "projectName": "OOP.Lab.20222.20214937.Phan-Dinh-Truong_78da96d7"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"

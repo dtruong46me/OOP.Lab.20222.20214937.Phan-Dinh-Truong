@@ -1,4 +1,4 @@
-package AimsProject.src.hust.soict.dsai.aims.main;
+package hust.soict.dsai.aims.main;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -11,14 +11,14 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
-import AimsProject.src.hust.soict.dsai.aims.cart.Cart;
-import AimsProject.src.hust.soict.dsai.aims.media.Book;
-import AimsProject.src.hust.soict.dsai.aims.media.CompactDisc;
-import AimsProject.src.hust.soict.dsai.aims.media.DigitalVideoDisc;
-import AimsProject.src.hust.soict.dsai.aims.media.Media;
-import AimsProject.src.hust.soict.dsai.aims.media.Playable;
-import AimsProject.src.hust.soict.dsai.aims.media.Track;
-import AimsProject.src.hust.soict.dsai.aims.store.Store;
+import hust.soict.dsai.aims.cart.Cart;
+import hust.soict.dsai.aims.media.Book;
+import hust.soict.dsai.aims.media.CompactDisc;
+import hust.soict.dsai.aims.media.DigitalVideoDisc;
+import hust.soict.dsai.aims.media.Media;
+import hust.soict.dsai.aims.media.Playable;
+import hust.soict.dsai.aims.media.Track;
+import hust.soict.dsai.aims.store.Store;
 
 public class Aims {
     private static Store store = new Store();
